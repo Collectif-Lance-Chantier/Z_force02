@@ -1,9 +1,4 @@
-body {
-    background-image: url('fond_site.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-}
+
 header {
     position: fixed;
     top: 0;
@@ -15,6 +10,12 @@ header {
     text-align: right;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+}
+@font-face {
+    font-family: 'space Age';
+    src: url('space age.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 .nav {
     text-decoration: none;
@@ -35,11 +36,14 @@ header {
     text-decoration: none;
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 .text {
     text-align: center;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-family: 'space Age', Impact, sans-serif;
+    color: red;
 
 }
 .lien {
@@ -111,4 +115,33 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 768px) {
+    .espace {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.bg1 {
+    background-image: url('entrer.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.bg2 {
+    background-image: url('autre.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.bg3 {
+    background-image: linear-gradient(to bottom right, #4B4F5a, #A0A4AB);
+    color: black;
+}
+.text2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'space Age', Impact, sans-serif;
+    color: black;
 }
